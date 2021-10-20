@@ -21,7 +21,7 @@ class Routers extends Component {
 
         if (!sessionStorage.getItem('TokenSession')) {
             return (
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <div className="contenedor">
                         <Switch>
                             <Route exact path="/" component={Login} />
@@ -33,7 +33,7 @@ class Routers extends Component {
             );
         } else {
             return (
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <div className='header'>
                         <div className='header-logo'>
                         <img src='https://titamedia.com/wp-content/uploads/2021/01/liga-tita@2x.png' />
