@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+}
+
+.header-logo img{
+    width: 255px;
+    height: 22px;
+}
+
+.header-user{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 18px;
+    margin-right: 24px;
+}
+
+.header-user img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+}
